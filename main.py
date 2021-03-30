@@ -64,8 +64,3 @@ def main():
     print(json.dumps(cloud_formation_stack))
 
 main()
-
-# cf_stack = parse_cf(sys.stdin.read())
-# for resource_name, resource in cf_stack['Resources'].items(): 
-    # if resource.get("Properties") and 'Role' in resource.get("Properties"):
-        # print(resource.get("Properties").get("Role"))
