@@ -1,0 +1,4 @@
+cfn-flip==1.2.3
+click==7.1.2
+PyYAML==5.4.1
+six==1.15.0
