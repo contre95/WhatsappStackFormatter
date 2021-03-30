@@ -25,7 +25,9 @@ In case a `AWS::IAM::Role` is created like so:
 ```
 
 Then the resources that make reference to that `Role` will now use the *supposedly* existing role under the following standard:
+
 `arn:aws:iam::` + **AWS_ACCOUNT_NUMBER** + `:role/ECSScalingRole` + **CUSTOM_POSTFIX** 
+
 So make sure to have those created before deploying the stack. 
 Both the *AWS_ACCOUNT_NUMBER* and the *CUSTOM_POSTFIX* can be configured inside the `main.py` file
                                                                                             
