@@ -39,5 +39,5 @@ pip install -r req.txt
 
 ## Run
 ```shell
- cat wa_ent.yml | cfn-flip | ./main.py | cfn-flip | copy
+ cat wa_ent_example.yml | cfn-flip | ./main.py | cfn-flip > formatted_wa_ent_example.yml
 ```
