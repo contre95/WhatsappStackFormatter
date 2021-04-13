@@ -1,6 +1,10 @@
 # WhatsApp Cloudformation stack formatter
 
+Usually large enterprises have their own way of creating IAM Roles, Users, and Policies in the cloud but already predefined stacks come with these embedes in their IaC templates. This project removes any given IAM identity resource and dereference from the original resource replacing the resource with an already created one follwoing a predefined pattern for the pre-created resource name.
+
 This Python script formats the stack taken from [this website](https://developers.facebook.com/docs/whatsapp/changelog) so that it does not creates IAM resources but uses already existing ones instead.
+
+*(It works for other stacks as well but has not been thoroughly tested)*
 
 This scripts removes every IAM Resource created in the stack and aim to use the same stack with the following standard.
 
